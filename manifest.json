@@ -5,6 +5,14 @@
   "description": "This extension provides tips about proper online etiquette.",
   "version": "1.0",
 
+//not working
+ "content_scripts": [
+    {
+      "matches": ["<all_urls>"], 
+      "js": ["getmetadata.js"]
+    }
+  ],
+  //for popupexample.js only, not Netiquette
   "permissions": [
     "https://secure.flickr.com/"
   ],
