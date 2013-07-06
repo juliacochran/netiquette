@@ -5,19 +5,27 @@
   "description": "This extension provides tips about proper online etiquette.",
   "version": "1.0",
 
+  "icons": { "48": "logo48.png",
+          "128": "logo128.png" },
+
 //not working
  "content_scripts": [
     {
       "matches": ["<all_urls>"], 
-      "js": ["getmetadata.js"]
+      "run_at": "document_end",
+      "js": ["testscript.js"]
     }
   ],
-  //for popupexample.js only, not Netiquette
-  "permissions": [
-    "https://secure.flickr.com/"
+ "permissions": ["tabs", "http://*/*", "background"],
+
+ "background": "background.html",
+
+  "web_accessible_resources": [
+    "styles.css"
   ],
+
   "browser_action": {
-    "default_icon": "netiquette_logo.png",
+    "default_icon": "logo19.png",
     "default_popup": "popup.html"
   }
 }
