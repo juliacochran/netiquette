@@ -5,27 +5,28 @@
   "description": "This extension provides tips about proper online etiquette.",
   "version": "1.0",
 
-  "icons": { "48": "logo48.png",
-          "128": "logo128.png" },
+  "icons": { "48": "images/logo48.png",
+          "128": "images/logo128.png" },
 
 //not working
  "content_scripts": [
     {
       "matches": ["<all_urls>"], 
       "run_at": "document_end",
-      "js": ["testscript.js"]
+      "js": ["javascripts/contentscript.js"]
     }
   ],
  "permissions": ["tabs", "http://*/*", "background"],
 
  "background": "background.html",
 
+  //must list all css files here
   "web_accessible_resources": [
-    "styles.css"
+    "styles/popup.css"
   ],
 
   "browser_action": {
-    "default_icon": "logo19.png",
+    "default_icon": "images/logo19.png",
     "default_popup": "popup.html"
   }
 }
