@@ -24,6 +24,7 @@ chrome.tabs.query(
     // Example:
     var url = tab.url;
     // ... do something with url variable
+       document.getElementById('title').innerHTML(url);
 
 });
 
