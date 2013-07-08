@@ -6,12 +6,18 @@ body {
 .popup_wrapper {
 	padding: 10px;
 	background-color: #FFCC66;
-	font-family: "arial";
+	font-family: "Georgia, serif";
 }
 
 /*title of the popup itself*/
+
+.url {
+	font-size: 12pt;
+	color: #003300;
+	text-decoration: underline;
+}
 .title {
-	font-size: 16pt;
+	font-size: 14pt;
 	color: #0000FF;
 	padding: 5px;
 }	
@@ -21,13 +27,13 @@ body {
 }
 
 .tip_title{
-	font-size: 14pt;
+	font-size: 12pt;
 	font-style: bold;
 	color: 14pt;
 	padding: 10px 0px;
 }
 
 .tip_content {
-	font-size: 12pt;
+	font-size: 10pt;
 	font-style:  italic;
 }

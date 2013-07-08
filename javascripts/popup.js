@@ -12,6 +12,8 @@
 
 // Do NOT forget that the method is ASYNCHRONOUS
 
+
+
 chrome.tabs.query(
     {
     active: true,                              // Select active tabs
@@ -24,9 +26,48 @@ chrome.tabs.query(
     // Example:
     var url = tab.url;
     // ... do something with url variable
-       document.getElementById('title').innerHTML(url);
+       document.getElementById('url').innerHTML = url;
+
 
 });
 
+
+// function GetMetaValue(meta_name) {
+
+//     var my_arr = document.getElementsByTagName("meta");
+//     for (var counter = 0; counter < my_arr.length; counter++) {
+//         console.log(my_arr[counter].getAttribute('property'));
+
+//         if (my_arr[counter].getAttribute('property') == meta_name) {
+//             return my_arr[counter].content;
+//         }
+//     }
+//     return "N/A";
+
+// }
+
+
+// data = document.getElementsByTagName("meta");
+
+//     keywords = []; 
+//     var len = data.length;
+//     for (var i = 0; i < len; i++) {
+//        if (data[i].getAttribute('property') == 'keywords') {
+//           keywords = data[i].content.split(",");
+//          }
+//     }
+
+  //  function getMetaContent(propName) {
+  //      var metas = document.getElementsByTagName('meta');
+    
+  //      for (i = 0; i < metas.length; i++) {
+  //          if (metas[i].getAttribute("name") == propName) {
+  //              return metas[i].getAttribute("content");
+  //          }
+  //      }
+    
+  //     return "";
+  // }
+  //   document.getElementById('keywords').innerHTML = keywords;
 
 
