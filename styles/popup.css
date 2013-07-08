@@ -1,15 +1,13 @@
 body {
-	min-width: 300px;
+	min-width: 350px;
 	overflow-x: hidden;
 }
 
 .popup_wrapper {
 	padding: 10px;
 	background-color: #FFCC66;
-	font-family: "Georgia, serif";
+	font-family: "Tahoma", "Geneva", "sans-serif";
 }
-
-/*title of the popup itself*/
 
 .url {
 	font-size: 12pt;
@@ -18,6 +16,7 @@ body {
 }
 
 .keywords {
+
 }
 
 .title {
