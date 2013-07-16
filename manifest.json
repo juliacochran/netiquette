@@ -13,7 +13,13 @@
     {
       "matches": ["<all_urls>"], 
       "run_at": "document_end",
-      "js": ["javascripts/contentscript.js"]
+      "js": ["javascripts/contentscript.js",
+             "javascripts/jquery-ui.min,js",
+              "javascripts/jquery.min.js"
+
+            ],
+
+        "css": [ "jquery-ui.css" ]
     }
   ],
  "permissions": ["tabs", "http://*/*", "background"],
