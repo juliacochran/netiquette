@@ -3,6 +3,14 @@ body {
 	overflow-x: hidden;
 }
 
+#email {
+	display: none;
+}
+
+#social_network {
+	display: none;
+}
+
 .popup_wrapper {
 	padding: 10px;
 	background-color: #FFCC66;

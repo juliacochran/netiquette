@@ -16,7 +16,7 @@
       "js": ["javascripts/contentscript.js"]
     }
   ],
- "permissions": ["tabs", "http://*/*", "background"],
+ "permissions": ["tabs", "http://*/*", "background", "https://*/*"],
 
  "background": "background.html",
 

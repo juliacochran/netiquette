@@ -12,7 +12,7 @@
 
 // Do NOT forget that the method is ASYNCHRONOUS
 
-
+//$('#social_network').show();
 
 chrome.tabs.query(
     {
@@ -20,31 +20,42 @@ chrome.tabs.query(
     windowId: chrome.windows.WINDOW_ID_CURRENT // In the current window
     },
     function(array_of_Tabs) {
-    // Since there can only be one active tab in one active window,
-    //  the array has only one element
-    var tab = array_of_Tabs[0];
-    // Example:
-    var url = tab.url;
-    // ... do something with url variable
-       document.getElementById('url').innerHTML = url;
-       document.getElementById('keywords').innerHTML = getMetaContent('keywords');
+      var tab = array_of_Tabs[0];
+      var url = tab.url;
+      document.getElementById('url').innerHTML = url;
+      document.getElementById('keywords').innerHTML = getMetaContent('keywords');
 
+      var category = getCategory(url);
+      displayContent(category);
 
 });
 
 
 
+function getMetaContent(propName) {
+   var metas = document.getElementsByTagName('meta');
 
-   function getMetaContent(propName) {
-       var metas = document.getElementsByTagName('meta');
-    
-       for (i = 0; i < metas.length; i++) {
-           if (metas[i].getAttribute("name") == propName) {
-               return metas[i].getAttribute("content");
-           }
+   for (i = 0; i < metas.length; i++) {
+       if (metas[i].getAttribute("name") == propName) {
+           return metas[i].getAttribute("content");
        }
-    
-      return "no meta data present";
-  }
+   }
 
+  return "no meta data present";
+}
+
+function displayContent(tips_category) {
+  document.getElementById(tips_category).style.display = "block";
+}
+
+function getCategory(url) {
+    if( /^(.*\.)?facebook\./.test(url) ){
+       return "social_network";
+    }
+    else if(/^(.*\.)?twitter\./.test(url))
+      return "social_network";
+    else {
+        return "other";
+    }
+}
 
