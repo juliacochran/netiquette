@@ -11,6 +11,23 @@ body {
 	display: none;
 }
 
+#blog {
+	display: none;
+}
+
+#forum {
+	display: none;
+}
+#other {
+	display: none;
+}
+
+.tip_content {
+	display: none;
+	cursor: pointer;
+
+}
+
 .popup_wrapper {
 	padding: 10px;
 	background-color: #FFCC66;
@@ -42,6 +59,7 @@ body {
 	font-style: bold;
 	color: 14pt;
 	padding: 10px 0px;
+	cursor: pointer;
 }
 
 .tip_content {

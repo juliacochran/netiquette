@@ -4,7 +4,11 @@
 
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles/popup.css">
+     <link rel="stylesheet" type="text/css" href="styles/popup.css">
+     <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+     <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+     <meta charset = "utf-8">
+
     <title>Netiquette Popup</title>
       <meta name = "keywords" content = "testing, ethics, social networking">
       <script type="text/javascript" src="javascripts/popup.js"></script>
@@ -15,18 +19,216 @@
     <div id = "test"> </div>
     <div class = "popup_wrapper">
 
-    <div id="social_network"> test
+  <!--SOCIAL NETWORK -->
 
-     <iframe src = "social_network.html"> </iframe>
+  <div id="social_network"> 
+  <div class = "title" id="title"> Social Networking Tips </div> 
+  <div class = "tips">
+
+        <div id = "tip1">
+            <div class = "tip_title" title="Click for more information."> <b>Posting:</b> Don’t post anything you wouldn’t want your boss to see. </div>
+            <div class = "tip_content">
+                <ul>
+                    <li>Employers often use profile searches to weed out potential candidates.</li>
+                    <li>Much of what you post to a social network is viewable via a quick Google search regardless of the privacy settings you have chosen.</li>
+                    <li>You don't want the success of your job search to hinge on the quality of last Saturday's misadventures.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id = "tip2">
+            <div class = "tip_title" title="Click for more information."> <b>Comments:</b> Don't say anything you wouldn't want your mom to see. </div>
+            <div class = "tip_content">
+                <ul>
+                    <li>Comments usually aren't as easily accessible as other posting options on social networks, but that doesn't mean they aren't equally as important to your image.</li>
+                    <li>While a post is shared with your entire network, comments are more often viewed by those you have close acquaintances with.</li>
+                    <li>This smaller venue is much better suited for controversial topics that your entire network may not agree with.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id = "tip3">
+            <div class = "tip_title" title="Click for more information."> <b>Profile:</b> This information is online. </div>
+            <div class = "tip_content">
+                <ul>
+                    <li>A profile is an easy way to share the current state of your life with all of your friends, but proper precautions should be taken to help prevent personal information from falling into malicious hands.</li>
+                    <li>Save more personal, easily abused information for those friends whose personal information is equally valuable to you.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id = "tip4">
+            <div class = "tip_title" title="Click for more information."> <b>Friends:</b> Would you go out of your way to wish this person a happy birthday?</div>
+            <div class = "tip_content">
+                <ul>
+                    <li>Choosing to connect solely with people you are good friends with helps cut down on the uninteresting clutter that is sure to accumulate in your News Feed or LinkedIn and helps to secure your information from that weird guy you met in third grade.</li>
+                    <li>Don’t tempt yourself into making poor decisions on social networks because of the activities of your acquaintances.</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 
-    <div id = "other"> otherrrrr </div>
+      </div>
 
-    <div id = "email"> </div>
-      Current top tab URL: <div class = "url" id ="url"> </div> <br> </br>
-      Current chrome extension keywords:<div class = "keywords" id = "keywords">Keywords: </div>
+  <!--EMAIL-->
+
+      <div id="email"> 
+      <div class = "title" id="title"> Emailing Tips </div>
+      <div class = "tips">
+
+        <div id = "tip1">
+            <div class = "tip_title" title="Click for more information."> <b>Receiving:</b> Try to keep a clean inbox. </div>
+            <div class = "tip_content">
+                <ul>
+                    <li>Check the Sender and Subject lines before you open an email.</li>
+                    <li>If you receive an email from someone you don’t know or weren’t expecting, be wary!</li>
+                    <li>Always delete junk mail, hoaxes, and chain letters. It’s just clutter.</li>
+                    <li>Archive any emails that you’re done with; star any that serve as a reminder.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id = "tip2">
+            <div class = "tip_title" title="Click for more information."> <b>Writing:</b> Look before you hit ‘Send.’ </div>
+            <div class = "tip_content">
+                <ul>
+                    <li>Always proofread your email to see if it makes sense.</li>
+                    <li>Try to make it concise. Can you say what you want more clearly?</li>
+                    <li>Make sure that the tone is appropriate for the recipient.</li>
+                    <li>Try not to let it out stream-of-consciousness style.</li>
+                    <li>dOn’T tYpE lYk DiS. AND PLEASE NO CAPS LOCK.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id = "tip3">
+            <div class = "tip_title" title="Click for more information."> <b>Sending:</b> Don't use email as an excuse to avoid personal contact.</div>
+            <div class = "tip_content">
+                <ul>
+                    <li>Don't forget the value of face-to-face or even voice-to-voice communication.</li>
+                    <li>Email isn't appropriate when sending confusing or emotional messages.</li>
+                    <li>If you have a problem with someone, speak with that person directly.</li>
+                    <li>Using the screen as a barrier can only lead to misunderstandings later on.</li>
+                </ul>
+            </div>
+        </div>
 
     </div>
+
+
+      </div>
+
+  <!-- BLOG -->
+
+  <div id="blog"> 
+     <div class = "title" id="title" > Blogging Tips </div>
+   
+    <div class = "tips">
+
+        <!-- we will have to dynamically fill these using javascript once we determine the category -->
+        <div id = "tip1">
+            <div class = "tip_title" title="Click for more information."> <b>Posting:</b> Don't try too hard. Be yourself.</div>
+            <div class = "tip_content">
+                <ul>
+                    <li>Overposting or overpinning won't gain you any more fans. Your existing followers may get weary of seeing your posts all over their home page daily and stop following you.</li>
+                    <li>Think twice before you post and make it relevant!</li>
+                    <li>Post what you know: If you post a photo of something interesting, explain why you think it's interesting. Others may agree, or not. And that kind of discussion leads to more followers and more people repinning / reblogging your posts.</li>
+                    <li>Reblogging / repinning is lazy and addicting, but make sure that you're not always linking to existing content. I'm sure you have something unique to offer.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- we will have to dynamically fill these using javascript once we determine the category -->
+        <div id = "tip2">
+            <div class = "tip_title" title="Click for more information."> <b>Comments:</b> Funny is always acceptable, except when it crosses the line.</div>
+            <div class = "tip_content">
+                <ul>
+                    <li>This is the first interaction many people will ever have with you. Make a good impression.</li>
+                    <li>Make sure that your comment isn't going to offend a large group of people.</li>
+                    <li>Constructive criticism is always welcome.</li>
+                    <li>Raging / hate is okay only sometimes. Make sure you're in the right community for it before you hit 'Post.'</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- we will have to dynamically fill these using javascript once we determine the category -->
+        <div id = "tip3">
+            <div class = "tip_title" title="Click for more information."> <b>Profile:</b> Be honest.</div>
+            <div class = "tip_content">
+                <ul>
+                    <li>Don't pretend to be someone you're not. It's hard to keep up, and someone will see through it eventually.</li>
+                    <li>People won't follow you for who you're trying hard to be. People will follow you for you. :-)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- we will have to dynamically fill these using javascript once we determine the category -->
+        <div id = "tip4">
+            <div class = "tip_title" title="Click for more information."> <b>Community:</b> Get yourself involved, get others involved. Make it a social experience.</div>
+            <div class = "tip_content">
+                <ul>
+                    <li>Don't follow everyone you know expecting a follow-back.</li>
+                    <li>If you want to get more of a following, consider posting some original content.</li>
+                    <li>Besides posting, tag friends and followers in Pinterest pins or inbox people on Tumblr to get a conversation going.</li>
+                    <li>Share content with friends over email, Facebook, and Twitter. Make it multimodal.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+ 
+
+  <!-- FORUM -->
+
+      <div id="forum"> 
+      <div class = "title" id="title"> Forum Tips </div>
+      <div class = "tips">
+
+        <div id = "tip1">
+            <div class = "tip_title" title="Click for more information."> <b>Posting:</b> Share useful, interesting content.</div>
+            <div class = "tip_content">
+                <ul>
+                    <li>Cater to the community - post items relevant to the community. If your topic has a narrow audience, navigate to a related sub community and share it there.</li>
+                    <li>Spamming is useless. Forums are community-driven and no community likes spam.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id = "tip2">
+            <div class = "tip_title" title="Click for more information."> <b>Comments:</b> Build the community, don’t destroy it. </div>
+            <div class = "tip_content">
+                <ul>
+                    <li>Different forums have different rules. Determine the lay of the land before you do anything rash.</li>
+                    <li>Comments on forums are often crude and offensive. This is fine, they are built to handle, and even facilitate, such bouts of rage. If you feel the need to speak your mind in such a manner, make sure it serves to better the community, i.e. not something that serves the platonic ideal of trolling.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id = "tip3">
+            <div class = "tip_title" title="Click for more information."> <b>Profile:</b> What’s your alias?</div>
+            <div class = "tip_content">
+                <ul>
+                    <li>Accounts on forums are almost always more useful when they are unattached to you personally. This allows you to speak about controversial topics without fear of retribution, whether physically or mentally.</li>
+                    <li>Make sure no personally-identifiable information is on your profile, unless you specifically want that profile to be your official handle of representation.</li>
+                    <li>Create as many profiles as you need to. Profiles work better when they each have a sense of self. This allows each alias to build their own reputation and can lead to deeper discussions that only come about through familiarity.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+      </div>
+
+      <div id = "other"> No online etiquette available at the moment. </div>
+
+      <div id = "email"> </div>
+    </div>
+
+  </div>
+
   </body>
 </html>
 

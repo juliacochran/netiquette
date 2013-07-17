@@ -1,32 +1,115 @@
-//definitely not correct. attempting to listen to message from content script
-//
-//once we get the keywords back, algorithm for determining the category will go in this file 
-//then we will be able to set the content accordingly
-
-//chrome.extension.onRequest.addListener(function(keywords, sender, sendResponse) {
-//	if(keywords.length > 0)
-//		document.getElementById('tips').innerHTML = 'keywords is not empty. woooooo!'
-//	sendResponse();
-//});
-//Still working on this can't get it functioning properly...
-
-// Do NOT forget that the method is ASYNCHRONOUS
-
-//$('#social_network').show();
-
 chrome.tabs.query(
     {
-    active: true,                              // Select active tabs
-    windowId: chrome.windows.WINDOW_ID_CURRENT // In the current window
+    active: true,                              
+    windowId: chrome.windows.WINDOW_ID_CURRENT 
     },
     function(array_of_Tabs) {
       var tab = array_of_Tabs[0];
       var url = tab.url;
-      document.getElementById('url').innerHTML = url;
-      document.getElementById('keywords').innerHTML = getMetaContent('keywords');
 
       var category = getCategory(url);
       displayContent(category);
+
+      //SOCIAL NETWORK
+
+      $(document).ready(function(){
+        $('#social_network #tip1 .tip_title').click(function() {
+           $('#social_network #tip1 .tip_content').toggle();
+         })
+      });
+
+      $(document).ready(function(){
+        $('#social_network #tip2 .tip_title').click(function() {
+           $('#social_network #tip2 .tip_content').toggle();
+         })
+      });
+
+      $(document).ready(function(){
+        $('#social_network #tip3 .tip_title').click(function() {
+           $('#social_network #tip3 .tip_content').toggle();
+         })
+      });
+
+      $(document).ready(function(){
+        $('#social_network #tip4 .tip_title').click(function() {
+           $('#social_network #tip4 .tip_content').toggle();
+         })
+      });
+
+      //BLOG
+      $(document).ready(function(){
+        $('#blog #tip1 .tip_title').click(function() {
+           $('#blog #tip1 .tip_content').toggle();
+         })
+      });
+
+      $(document).ready(function(){
+        $('#blog #tip2 .tip_title').click(function() {
+           $('#blog #tip2 .tip_content').toggle();
+         })
+      });
+
+      $(document).ready(function(){
+        $('#blog #tip3 .tip_title').click(function() {
+           $('#blog #tip3 .tip_content').toggle();
+         })
+      });
+
+      $(document).ready(function(){
+        $('#blog #tip4 .tip_title').click(function() {
+           $('#blog #tip4 .tip_content').toggle();
+         })
+      });
+
+      //FORUM
+      $(document).ready(function(){
+        $('#forum #tip1 .tip_title').click(function() {
+           $('#forum #tip1 .tip_content').toggle();
+         })
+      });
+
+      $(document).ready(function(){
+        $('#forum #tip2 .tip_title').click(function() {
+           $('#forum #tip2 .tip_content').toggle();
+         })
+      });
+
+      $(document).ready(function(){
+        $('#forum #tip3 .tip_title').click(function() {
+           $('#forum #tip3 .tip_content').toggle();
+         })
+      });
+
+      $(document).ready(function(){
+        $('#forum #tip4 .tip_title').click(function() {
+           $('#forum #tip4 .tip_content').toggle();
+         })
+      });
+
+      //EMAIL
+      $(document).ready(function(){
+        $('#email #tip1 .tip_title').click(function() {
+           $('#email #tip1 .tip_content').toggle();
+         })
+      });
+
+      $(document).ready(function(){
+        $('#email #tip2 .tip_title').click(function() {
+           $('#email#tip2 .tip_content').toggle();
+         })
+      });
+
+      $(document).ready(function(){
+        $('#email #tip3 .tip_title').click(function() {
+           $('#email #tip3 .tip_content').toggle();
+         })
+      });
+
+      $(document).ready(function(){
+        $('#email #tip4 .tip_title').click(function() {
+           $('#email #tip4 .tip_content').toggle();
+         })
+      });
 
 });
 
@@ -44,18 +127,42 @@ function getMetaContent(propName) {
   return "no meta data present";
 }
 
+
 function displayContent(tips_category) {
+    $(document).ready(function(){
+        $("#email").hide();
+        $("#blog").hide();
+        $("#forum").hide();
+        $("#social_network").hide();
+        $("#"+tips_category).show();
+
+    });
+
   document.getElementById(tips_category).style.display = "block";
 }
 
 function getCategory(url) {
-    if( /^(.*\.)?facebook\./.test(url) ){
+    if(url.indexOf('facebook') > -1 || url.indexOf('twitter') > -1){
        return "social_network";
     }
-    else if(/^(.*\.)?twitter\./.test(url))
-      return "social_network";
+    if(url.indexOf('mail') > -1|| url.indexOf('yahoo') >-1 || url.indexOf('live') > -1) {
+      return "email";
+    }
+    if(url.indexOf('pinterest') > -1|| url.indexOf('tumblr') >-1|| url.indexOf('instagram') >-1|| url.indexOf('wordpress') >-1|| url.indexOf('blog') >-1|| url.indexOf('medium') > -1) {
+      return "blog";
+    }
+    if(url.indexOf('4chan') >-1|| url.indexOf('reddit') > -1) {
+      return "forum";
+    }
     else {
         return "other";
     }
 }
+
+
+
+
+
+
+
 
