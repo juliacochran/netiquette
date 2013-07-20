@@ -95,7 +95,7 @@ chrome.tabs.query(
 
       $(document).ready(function(){
         $('#email #tip2 .tip_title').click(function() {
-           $('#email#tip2 .tip_content').toggle();
+           $('#email #tip2 .tip_content').toggle();
          })
       });
 

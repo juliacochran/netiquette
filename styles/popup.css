@@ -25,13 +25,15 @@ body {
 .tip_content {
 	display: none;
 	cursor: pointer;
-
 }
+
+
 
 .popup_wrapper {
 	padding: 10px;
 	background-color: #FFCC66;
-	font-family: "Tahoma", "Geneva", "sans-serif";
+	border: 2px solid #000000;
+	font-family: "Candara";
 }
 
 .url {
@@ -43,11 +45,20 @@ body {
 .keywords {
 
 }
+.help {
+	font-style: italic;
+	font-size: 10pt;
+	padding:  0px 10px;
+}
 
 .title {
-	font-size: 14pt;
-	color: #0000FF;
-	padding: 5px;
+	font-size: 16pt;
+	color: #000000;
+	padding: 10px 10px 5px 10px;
+	font-style: bold;
+	text-transform: uppercase;
+	text-decoration: underline;
+
 }	
 
 .tips{
@@ -57,12 +68,16 @@ body {
 .tip_title{
 	font-size: 12pt;
 	font-style: bold;
-	color: 14pt;
-	padding: 10px 0px;
+	padding: 10px;
 	cursor: pointer;
+}
+.tip_title:hover {
+	background-color: #FFFFCC;
+	
 }
 
 .tip_content {
 	font-size: 10pt;
 	font-style:  italic;
+	cursor: default;
 }

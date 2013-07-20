@@ -13,8 +13,7 @@
     {
       "matches": ["<all_urls>"], 
       "run_at": "document_end",
-      "js": ["javascripts/contentscript.js",
-             "javascripts/jquery-ui.min.js",
+      "js": ["javascripts/jquery-ui.min.js",
               "javascripts/jquery.min.js"
 
             ],
