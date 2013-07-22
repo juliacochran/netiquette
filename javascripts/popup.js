@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-//FOR NOTIFICATION SYSTEM
-//will eventually work by just changing the icon when a new tab is activiated
-//
-// chrome.tabs.onActivated.addListener(function(object activeInfo) {
-//   var active_tab_id    = info.tabId,
-//   windowId = info.windowId;
-// });
-
-// chrome.tabs.onUpdated.addListener(function(active_tab_id, object changeInfo, Tab tab) {...});
-=======
-document.getElementById('urltest').innerHTML = localStorage.test;
->>>>>>> c05035b9a77e83d4eb8aade61618268dbac33db2
-
 chrome.tabs.query(
     {
     active: true,                              
