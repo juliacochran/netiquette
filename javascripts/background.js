@@ -2,7 +2,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     var category = getCategory(tab.url);
     if(category != 'other') {
         chrome.browserAction.setIcon({
-          path: 'images/logo_green19.png'
+          path: 'images/logo_orange19.png'
         });
     }
     else {
@@ -18,7 +18,7 @@ chrome.tabs.onActivated.addListener(function(activeInfo) {
     var category = getCategory(tab.url);
     if(category != 'other') {
         chrome.browserAction.setIcon({
-          path: 'images/logo_green19.png'
+          path: 'images/logo_orange19.png'
        });
     }
     else {
