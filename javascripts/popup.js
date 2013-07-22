@@ -14,7 +14,7 @@ chrome.tabs.query(
       $(document).ready(function(){
 
         $('#social_network #tip1 .tip_title').click(function() {
-           $('#social_network #tip1 .tip_content').toggle();
+           $('#social_network #tip1 .tip_content').toggle(slow);
          })
       });
 
