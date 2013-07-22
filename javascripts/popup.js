@@ -8,8 +8,6 @@
 
 // chrome.tabs.onUpdated.addListener(function(active_tab_id, object changeInfo, Tab tab) {...});
 
-
-
 chrome.tabs.query(
     {
     active: true,                              
@@ -18,14 +16,13 @@ chrome.tabs.query(
     function(array_of_Tabs) {
       var tab = array_of_Tabs[0];
       var url = tab.url;
-
       var category = getCategory(url);
       displayContent(category);
 
       //SOCIAL NETWORK
 
       $(document).ready(function(){
-        
+
         $('#social_network #tip1 .tip_title').click(function() {
            $('#social_network #tip1 .tip_content').toggle();
          })
@@ -124,8 +121,57 @@ chrome.tabs.query(
          })
       });
 
-});
+        //NEWS
+        $(document).ready(function(){
+            $('#news #tip1 .tip_title').click(function() {
+                $('#news #tip1 .tip_content').toggle();
+            })
+        });
 
+        $(document).ready(function(){
+            $('#news #tip2 .tip_title').click(function() {
+                $('#news #tip2 .tip_content').toggle();
+            })
+        });
+
+        $(document).ready(function(){
+            $('#news #tip3 .tip_title').click(function() {
+                $('#news #tip3 .tip_content').toggle();
+            })
+        });
+
+        $(document).ready(function(){
+            $('#news #tip4 .tip_title').click(function() {
+                $('#news #tip4 .tip_content').toggle();
+            })
+        });
+
+        //MEDIA
+        $(document).ready(function(){
+            $('#media #tip1 .tip_title').click(function() {
+                $('#media #tip1 .tip_content').toggle();
+            })
+        });
+
+        $(document).ready(function(){
+            $('#media #tip2 .tip_title').click(function() {
+                $('#media #tip2 .tip_content').toggle();
+            })
+        });
+
+        $(document).ready(function(){
+            $('#media #tip3 .tip_title').click(function() {
+                $('#media #tip3 .tip_content').toggle();
+            })
+        });
+
+        $(document).ready(function(){
+            $('#media #tip4 .tip_title').click(function() {
+                $('#media #tip4 .tip_content').toggle();
+            })
+        });
+
+});
 
 
 function getMetaContent(propName) {
@@ -147,6 +193,8 @@ function displayContent(tips_category) {
         $("#blog").hide();
         $("#forum").hide();
         $("#social_network").hide();
+        $("#news").hide();
+        $("#media").hide();
         $("#"+tips_category).show();
 
     });
@@ -155,11 +203,11 @@ function displayContent(tips_category) {
 }
 
 function getCategory(url) {
-    if(url.indexOf('facebook') > -1 || url.indexOf('twitter') > -1){
+    if(url.indexOf('facebook') > -1 || url.indexOf('twitter') > -1 ){
 
        return "social_network";
     }
-    if(url.indexOf('mail') > -1|| url.indexOf('yahoo') >-1 || url.indexOf('live') > -1) {
+    if(url.indexOf('mail') > -1 || url.indexOf('live') > -1) {
       return "email";
     }
     if(url.indexOf('pinterest') > -1|| url.indexOf('tumblr') >-1|| url.indexOf('instagram') >-1|| url.indexOf('wordpress') >-1|| url.indexOf('blog') >-1|| url.indexOf('medium') > -1) {
@@ -167,6 +215,15 @@ function getCategory(url) {
     }
     if(url.indexOf('4chan') >-1|| url.indexOf('reddit') > -1) {
       return "forum";
+    }
+    if(url.indexOf('news') >-1|| url.indexOf('msnbc') > -1 || url.indexOf('yahoo') > -1 || url.indexOf('cnn') > -1
+                || url.indexOf('bbc') > -1 || url.indexOf('nytimes') > -1 || url.indexOf('guardian') > -1 || url.indexOf('reuters') > -1
+                || url.indexOf('huffingtonpost') > -1 || url.indexOf('washingtonpost') > -1 || url.indexOf('latimes') > -1) {
+        return "news";
+    }
+    if(url.indexOf('vine') >-1|| url.indexOf('youtube') > -1 || url.indexOf('vimeo') > -1 || url.indexOf('imgur') > -1
+                || url.indexOf('9gag') > -1 || url.indexOf('soundcloud') > -1) {
+        return "media";
     }
     else {
         return "other";
