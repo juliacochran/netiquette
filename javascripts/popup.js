@@ -1,5 +1,3 @@
-document.getElementById('urltest').innerHTML = localStorage.test;
-
 chrome.tabs.query(
     {
     active: true,                              
