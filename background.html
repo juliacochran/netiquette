@@ -1,1 +1,40 @@
-<!-- not exactly sure what is gonna go here, but I think we need this page -->
+<!doctype html>
+
+<html>
+  <head>
+     <link rel="stylesheet" type="text/css" href="styles/popup.css">
+     <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+     <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+     <meta charset = "utf-8">
+
+     <meta name = "keywords" content = "testing, ethics, social networking">
+     <script type="text/javascript" src="javascripts/popup.js"></script>
+
+  </head>
+<body>
+<script type = "text/javascript">
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+   document.getElementById('url').innerHTML = changeInfo.url;
+   var category = getCategory(changeInfo.url);
+   if(category != 'other') {
+     chrome.browserAction.setIcon('images/dog.jpeg');
+   }
+}); 
+
+chrome.tabs.onActivated.addListener(function(activeInfo) {
+  // how to fetch tab url using activeInfo.tabid
+  chrome.tabs.get(activeInfo.tabId, function(tab){
+    document.getElementById('url').innerHTML = tab.url;
+
+    var category = getCategory(tab.url);
+    if(category != 'other') {
+       chrome.browserAction.setIcon('images/cat.jpeg');
+    }
+  });
+}); 
+
+
+
+</script>
+</body>
+</html>

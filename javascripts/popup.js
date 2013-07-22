@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //FOR NOTIFICATION SYSTEM
 //will eventually work by just changing the icon when a new tab is activiated
 //
@@ -7,6 +8,9 @@
 // });
 
 // chrome.tabs.onUpdated.addListener(function(active_tab_id, object changeInfo, Tab tab) {...});
+=======
+document.getElementById('urltest').innerHTML = localStorage.test;
+>>>>>>> c05035b9a77e83d4eb8aade61618268dbac33db2
 
 chrome.tabs.query(
     {
@@ -172,19 +176,6 @@ chrome.tabs.query(
         });
 
 });
-
-
-function getMetaContent(propName) {
-   var metas = document.getElementsByTagName('meta');
-
-   for (i = 0; i < metas.length; i++) {
-       if (metas[i].getAttribute("name") == propName) {
-           return metas[i].getAttribute("content");
-       }
-   }
-
-  return "no meta data present";
-}
 
 
 function displayContent(tips_category) {
