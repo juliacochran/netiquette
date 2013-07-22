@@ -1,3 +1,15 @@
+//FOR NOTIFICATION SYSTEM
+//will eventually work by just changing the icon when a new tab is activiated
+//
+// chrome.tabs.onActivated.addListener(function(object activeInfo) {
+//   var active_tab_id    = info.tabId,
+//   windowId = info.windowId;
+// });
+
+// chrome.tabs.onUpdated.addListener(function(active_tab_id, object changeInfo, Tab tab) {...});
+
+
+
 chrome.tabs.query(
     {
     active: true,                              
@@ -13,6 +25,7 @@ chrome.tabs.query(
       //SOCIAL NETWORK
 
       $(document).ready(function(){
+        
         $('#social_network #tip1 .tip_title').click(function() {
            $('#social_network #tip1 .tip_content').toggle();
          })
@@ -143,6 +156,7 @@ function displayContent(tips_category) {
 
 function getCategory(url) {
     if(url.indexOf('facebook') > -1 || url.indexOf('twitter') > -1){
+
        return "social_network";
     }
     if(url.indexOf('mail') > -1|| url.indexOf('yahoo') >-1 || url.indexOf('live') > -1) {
