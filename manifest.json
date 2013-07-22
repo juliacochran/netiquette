@@ -23,7 +23,9 @@
   ],
  "permissions": ["tabs", "http://*/*", "background"],
 
- "background": "background.html",
+  "background": {
+    "scripts": ["javascripts/background.js"]
+  },
 
 
   "web_accessible_resources": [
