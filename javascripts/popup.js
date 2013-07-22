@@ -1,14 +1,4 @@
-//FOR NOTIFICATION SYSTEM
-//will eventually work by just changing the icon when a new tab is activiated
-//
-// chrome.tabs.onActivated.addListener(function(object activeInfo) {
-//   var active_tab_id    = info.tabId,
-//   windowId = info.windowId;
-// });
-
-// chrome.tabs.onUpdated.addListener(function(active_tab_id, object changeInfo, Tab tab) {...});
-
-
+document.getElementById('urltest').innerHTML = localStorage.test;
 
 chrome.tabs.query(
     {
@@ -126,19 +116,6 @@ chrome.tabs.query(
 
 });
 
-
-
-function getMetaContent(propName) {
-   var metas = document.getElementsByTagName('meta');
-
-   for (i = 0; i < metas.length; i++) {
-       if (metas[i].getAttribute("name") == propName) {
-           return metas[i].getAttribute("content");
-       }
-   }
-
-  return "no meta data present";
-}
 
 
 function displayContent(tips_category) {
