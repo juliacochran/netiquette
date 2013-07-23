@@ -31,7 +31,7 @@ body {
 
 .popup_wrapper {
 	padding: 10px;
-	background-color: #FFCC66;
+	background-color: #FFCC66; /*tan*/
 	border: 2px solid #000000;
 	font-family: "Candara";
 }
@@ -47,17 +47,19 @@ body {
 }
 .help {
 	font-style: italic;
-	font-size: 10pt;
-	padding:  0px 10px;
+	font-size: 11pt;
+	margin-top: 10px;
+	text-align: center;
 }
 
 .title {
 	font-size: 16pt;
 	color: #000000;
-	padding: 10px 10px 5px 10px;
+	padding: 10px;
 	font-style: bold;
-	text-transform: uppercase;
-	text-decoration: underline;
+	text-align: center;
+	background-color: #FFCC66;
+	border-bottom: 1px solid #000000;
 
 }	
 
@@ -68,8 +70,8 @@ body {
 .tip_title{
 	font-size: 12pt;
 	font-style: bold;
-	padding: 10px;
 	cursor: pointer;
+	padding: 10px 0px;
 }
 .tip_title:hover {
 	background-color: #FFFFCC;
