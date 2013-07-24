@@ -21,12 +21,36 @@ body {
 #other {
 	display: none;
 }
+#media {
+	display: none;
+}
+#news {
+	display: none;
+}
 
 .tip_content {
 	display: none;
 	cursor: pointer;
 }
 
+.other_info {
+	font-size: 10pt;
+	font-style: italic;
+	text-align: center;
+	margin-top: 30px;
+}
+
+
+#other {
+	text-align: center;
+}
+
+#site_link {
+	text-decoration: underline;
+}
+#site_link:hover {
+	cursor: pointer;
+}
 
 
 .popup_wrapper {

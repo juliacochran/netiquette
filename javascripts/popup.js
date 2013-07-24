@@ -6,8 +6,16 @@ chrome.tabs.query(
     function(array_of_Tabs) {
       var tab = array_of_Tabs[0];
       var url = tab.url;
+
       var category = getCategory(url);
       displayContent(category);
+
+
+      $(document).ready(function(){
+        $('#site_link').click(function(){
+            chrome.tabs.create({url: "http://ethicsofnetiquette.tumblr.com"})
+        });
+      });
 
       //SOCIAL NETWORK
 
