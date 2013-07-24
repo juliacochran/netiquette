@@ -3,7 +3,7 @@
 
   "name": "Netiquette",
   "description": "This extension provides easily accessible, helpful, and tailored information regarding the online etiquette of various websites.",
-  "version": "2.0",
+  "version": "2.1",
 
   "icons": { "48": "images/logo48.png",
           "128": "images/logo128.png" },
