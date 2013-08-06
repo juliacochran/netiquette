@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34a11a34-7d83-47ee-8fcd-1bde4065d797" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo_orange19.png" afterPath="$PROJECT_DIR$/images/logo_orange19.png" />
-    </list>
+    <list default="true" id="34a11a34-7d83-47ee-8fcd-1bde4065d797" name="Default" comment="" />
     <ignored path="netiquette.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +23,7 @@
       <file leaf-file-name="popup.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/popup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="276" column="18" selection-start="14624" selection-end="14624" vertical-scroll-proportion="-0.625">
+            <state line="290" column="18" selection-start="16234" selection-end="16234" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -34,7 +32,7 @@
       <file leaf-file-name="manifest.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="41" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+            <state line="16" column="41" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -43,7 +41,7 @@
       <file leaf-file-name="background.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascripts/background.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="3" selection-start="504" selection-end="504" vertical-scroll-proportion="0.33962265">
+            <state line="27" column="3" selection-start="730" selection-end="730" vertical-scroll-proportion="0.3308176">
               <folding />
             </state>
           </provider>
@@ -300,9 +298,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/popup.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/popup.js">
@@ -314,7 +310,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/popup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="276" column="18" selection-start="14624" selection-end="14624" vertical-scroll-proportion="-0.625">
+        <state line="290" column="18" selection-start="16234" selection-end="16234" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -346,14 +342,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="41" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+        <state line="16" column="41" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/background.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="3" selection-start="504" selection-end="504" vertical-scroll-proportion="0.33962265">
+        <state line="27" column="3" selection-start="730" selection-end="730" vertical-scroll-proportion="0.3308176">
           <folding />
         </state>
       </provider>
